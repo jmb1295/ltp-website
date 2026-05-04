@@ -31,16 +31,16 @@ export default function Nav() {
           <Image
             src="/images/logo-moose.png"
             alt="Long Trail Partners moose logo"
-            width={112}
-            height={112}
+            width={98}
+            height={98}
             style={{ objectFit: 'contain', filter: 'invert(1) brightness(1.4) contrast(1.1)', mixBlendMode: 'screen', display: 'block' }}
           />
-          <div style={{ width: 1, height: 64, background: 'rgba(244,239,227,0.22)' }} />
+          <div style={{ width: 1, height: 56, background: 'rgba(244,239,227,0.22)' }} />
           <div>
-            <div style={{ fontFamily: 'var(--font-serif)', fontSize: 28, fontWeight: 600, letterSpacing: '0.04em', lineHeight: 1 }}>
+            <div style={{ fontFamily: 'var(--font-serif)', fontSize: 25, fontWeight: 600, letterSpacing: '0.04em', lineHeight: 1 }}>
               LONG TRAIL
             </div>
-            <div style={{ fontFamily: 'var(--font-sans)', fontSize: 12, fontWeight: 600, letterSpacing: '0.28em', color: 'var(--color-muted)', marginTop: 8, lineHeight: 1 }}>
+            <div style={{ fontFamily: 'var(--font-sans)', fontSize: 11, fontWeight: 600, letterSpacing: '0.28em', color: 'var(--color-muted)', marginTop: 7, lineHeight: 1 }}>
               PARTNERS
             </div>
           </div>
