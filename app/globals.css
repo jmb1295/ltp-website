@@ -1,0 +1,268 @@
+/* ─── Long Trail Partners — design tokens ─────────────────────────────────── */
+:root {
+  --color-forest:       #1F3329;
+  --color-forest-deep:  #18271F;
+  --color-cream:        #F4EFE3;
+  --color-cream-soft:   #D9D2C0;
+  --color-cream-deep:   #ECE3CE;
+  --color-brass:        #C8A766;
+  --color-muted:        #9FA89D;
+  --color-ink-soft:     #2A4736;
+  --color-ink-body:     #2A3A2C;
+  --color-ink-eyebrow:  #6B6157;
+
+  --font-serif: var(--font-source-serif), "Georgia", serif;
+  --font-sans:  var(--font-source-sans), "Helvetica Neue", Arial, sans-serif;
+
+  --max-w: 1240px;
+  --gutter: clamp(24px, 5vw, 60px);
+  --section-pad: 120px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-sans);
+  font-size: 18px;
+  line-height: 1.6;
+  background: var(--color-forest);
+  color: var(--color-cream);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+p, li, blockquote { text-wrap: pretty; }
+h1, h2, h3, h4 { text-wrap: balance; }
+
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+
+img { max-width: 100%; display: block; }
+a { color: inherit; }
+button { font-family: inherit; }
+
+/* ─── Eyebrow ─────────────────────────────────────────────────────────────── */
+.eyebrow {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  letter-spacing: 0.16em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  margin: 0;
+  display: block;
+}
+.eyebrow.on-cream { color: var(--color-ink-eyebrow); }
+
+/* ─── Containers ──────────────────────────────────────────────────────────── */
+.container {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+section { position: relative; }
+
+/* ─── Buttons ─────────────────────────────────────────────────────────────── */
+.btn {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 14px 28px;
+  border: 1px solid;
+  border-radius: 2px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: var(--font-sans);
+  background: transparent;
+}
+.btn--primary-dark {
+  background: var(--color-forest);
+  color: var(--color-cream);
+  border-color: var(--color-forest);
+}
+.btn--primary-dark:hover {
+  background: transparent;
+  color: var(--color-forest);
+}
+.btn--secondary-dark {
+  color: var(--color-forest);
+  border-color: var(--color-forest);
+}
+.btn--secondary-dark:hover {
+  background: var(--color-forest);
+  color: var(--color-cream);
+}
+.btn--primary-light {
+  background: var(--color-cream);
+  color: var(--color-forest);
+  border-color: var(--color-cream);
+}
+.btn--primary-light:hover {
+  background: transparent;
+  color: var(--color-cream);
+}
+.btn--ghost-light {
+  color: var(--color-cream);
+  border-color: rgba(244,239,227,0.4);
+}
+.btn--ghost-light:hover {
+  background: var(--color-cream);
+  color: var(--color-forest);
+  border-color: var(--color-cream);
+}
+
+/* ─── Focus styles ────────────────────────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--color-brass);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* ─── Section helpers ─────────────────────────────────────────────────────── */
+.section { padding: var(--section-pad) 0; }
+.section--cream      { background: var(--color-cream-deep); color: var(--color-forest); }
+.section--cream-pale { background: var(--color-cream);      color: var(--color-forest); }
+.section--forest     { background: var(--color-forest);     color: var(--color-cream); }
+.section--forest-deep{ background: var(--color-forest-deep); color: var(--color-cream); }
+
+.text-pretty  { text-wrap: pretty; }
+.text-balance { text-wrap: balance; }
+
+/* ─── Industries placeholder hatch ───────────────────────────────────────── */
+.industry-placeholder::before {
+  content: "";
+  position: absolute; inset: 0;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    transparent 0, transparent 12px,
+    rgba(31,51,41,0.05) 12px, rgba(31,51,41,0.05) 13px
+  );
+  pointer-events: none;
+}
+
+/* ─── Form ────────────────────────────────────────────────────────────────── */
+.input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(31,51,41,0.4);
+  padding: 10px 0;
+  font-size: 17px;
+  color: var(--color-forest);
+  outline: none;
+  transition: border-color 0.15s ease, border-width 0.15s ease;
+  font-family: var(--font-sans);
+}
+.input:focus { border-bottom: 2px solid var(--color-forest); }
+.input::placeholder { color: rgba(31,51,41,0.3); }
+.label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--color-forest);
+  margin-bottom: 6px;
+}
+
+/* ─── Mobile ──────────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  :root { --section-pad: 80px; }
+}
+
+/* ─── Nav responsive ──────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .ltp-nav-desktop { display: none !important; }
+  .ltp-nav-burger  { display: block !important; }
+}
+
+/* ─── Home: How We're Different ──────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .ltp-different-head { grid-template-columns: 1fr !important; gap: 24px !important; }
+  .ltp-diff-row { grid-template-columns: 1fr !important; gap: 8px !important; }
+}
+
+/* ─── Home: What to Expect ────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .ltp-phases-grid { grid-template-columns: 1fr !important; }
+  .ltp-phase-cell { border-right: none !important; border-bottom: 1px solid rgba(31,51,41,0.18); }
+  .ltp-phase-cell:last-child { border-bottom: none; }
+}
+
+/* ─── Home: Our Businesses ────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .ltp-biz-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
+}
+
+/* ─── Home: Team ──────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .ltp-team-grid { grid-template-columns: 1fr !important; gap: 56px !important; }
+}
+
+/* ─── Who We Are: Together ────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .ltp-together-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
+}
+
+/* ─── Who We Are: Bios ────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .ltp-bio-row { grid-template-columns: 1fr !important; gap: 24px !important; }
+  .ltp-bio-row > div { order: initial !important; }
+}
+
+/* ─── Who We Are: Field Gallery ──────────────────────────────────────────── */
+@media (max-width: 900px) { .ltp-field-grid { grid-template-columns: repeat(2, 1fr) !important; } }
+@media (max-width: 560px) { .ltp-field-grid { grid-template-columns: 1fr !important; } }
+
+/* ─── How We Think: Beliefs ───────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .ltp-belief-row { grid-template-columns: 1fr !important; gap: 24px !important; padding: 48px var(--gutter) !important; }
+}
+
+/* ─── Our Focus: Criteria ─────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .ltp-criteria-grid { grid-template-columns: 1fr !important; }
+  .ltp-crit-cell { border-right: none !important; border-bottom: 1px solid rgba(31,51,41,0.18); }
+  .ltp-crit-cell:last-child { border-bottom: none; }
+}
+
+/* ─── Our Focus: Characteristics ─────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .ltp-char-list { grid-template-columns: 1fr !important; }
+  .ltp-char-li { padding: 20px 0 !important; border-right: none !important; }
+}
+
+/* ─── Our Focus: Industries ───────────────────────────────────────────────── */
+@media (max-width: 1024px) { .ltp-ind-grid { grid-template-columns: repeat(2, 1fr) !important; } }
+@media (max-width: 768px)  { .ltp-ind-head { grid-template-columns: 1fr !important; gap: 24px !important; } }
+
+/* ─── For Owners: Phases ──────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .ltp-phase-row { grid-template-columns: 1fr !important; gap: 16px !important; }
+}
+
+/* ─── For Owners: Callouts ────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .ltp-callouts { grid-template-columns: 1fr !important; }
+  .ltp-callout-cell { border-right: none !important; border-bottom: 1px solid rgba(31,51,41,0.18) !important; padding: 36px 0 !important; }
+  .ltp-callout-cell:last-child { border-bottom: none !important; }
+}
+
+/* ─── For Owners: FAQ ─────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .ltp-faq-row { grid-template-columns: 1fr !important; gap: 12px !important; }
+}
+
+/* ─── Contact ─────────────────────────────────────────────────────────────── */
+@media (max-width: 600px) {
+  .ltp-form-row { grid-template-columns: 1fr !important; }
+  .ltp-direct { grid-template-columns: 1fr !important; gap: 40px !important; }
+}
