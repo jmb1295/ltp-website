@@ -19,6 +19,7 @@ export default function ContactPage() {
         lede="Whether you have built a business, you advise someone who has, or you are just curious about what we are building, we are always happy to have a conversation. A real person reads every message and we usually reply within a day. Use the form below, or reach out directly."
         imageSrc="/images/contact-hero.jpg"
         imageAlt="Covered bridge in Woodstock, Vermont"
+        videoSrc="/videos/contact-hero.mp4"
         imagePosition="center 50%"
       />
 

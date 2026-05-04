@@ -38,6 +38,7 @@ export default function WhoWeArePage() {
         lede="We have spent our careers inside businesses, not looking at them from the outside. That changes the way you think about almost everything."
         imageSrc="/images/who-we-are-hero.jpg"
         imageAlt="Southport, Vermont landscape"
+        videoSrc="/videos/who-we-are-hero.mp4"
         imagePosition="center 50%"
         imageFilter="saturate(1.08) contrast(1.06)"
       />

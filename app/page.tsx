@@ -23,8 +23,8 @@ function HomeHero() {
       aria-label="Hero"
     >
       <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
-        {/* TODO: Add /videos/hero.mp4 when video file is available */}
         <video
+          src="/videos/hero.mp4"
           poster="/images/hero.jpg"
           autoPlay
           muted
@@ -33,16 +33,6 @@ function HomeHero() {
           preload="auto"
           aria-hidden="true"
           style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', filter: 'saturate(1.1) contrast(1.06)', position: 'absolute', inset: 0 }}
-        >
-          <source src="/videos/hero.mp4" type="video/mp4" />
-        </video>
-        <Image
-          src="/images/hero.jpg"
-          alt=""
-          fill
-          priority
-          aria-hidden
-          style={{ objectFit: 'cover', objectPosition: 'center', filter: 'saturate(1.1) contrast(1.06)' }}
         />
         <div aria-hidden="true" style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(31,51,41,0.18) 0%, rgba(31,51,41,0) 28%, rgba(31,51,41,0) 50%, rgba(31,51,41,0.55) 88%, rgba(31,51,41,0.78) 100%)' }} />
         <div aria-hidden="true" style={{ position: 'absolute', inset: 0, background: 'linear-gradient(75deg, rgba(31,51,41,0.55) 0%, rgba(31,51,41,0.18) 40%, rgba(31,51,41,0) 70%)' }} />
