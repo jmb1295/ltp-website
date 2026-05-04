@@ -1,0 +1,197 @@
+/* ─── Long Trail Partners — design tokens (mirrors globals.css) ────────── */
+:root {
+  --color-forest:       #1F3329;
+  --color-forest-deep:  #18271F;
+  --color-cream:        #F4EFE3;
+  --color-cream-soft:   #D9D2C0;
+  --color-cream-deep:   #ECE3CE;
+  --color-brass:        #C8A766;
+  --color-muted:        #9FA89D;
+  --color-ink-soft:     #2A4736;
+  --color-ink-body:     #2A3A2C;
+  --color-ink-eyebrow:  #6B6157;
+
+  --font-serif: "Source Serif 4", "Source Serif Pro", Georgia, serif;
+  --font-sans:  "Source Sans 3", "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+
+  --max-w: 1240px;
+  --gutter: clamp(24px, 5vw, 60px);
+  --section-pad: 120px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-sans);
+  font-size: 18px;
+  line-height: 1.6;
+  background: var(--color-forest);
+  color: var(--color-cream);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Avoid widows / single-word last lines in long-form copy across the site. */
+p, li, blockquote {
+  text-wrap: pretty;
+}
+/* Headings benefit from balance (even line lengths) rather than pretty (just-no-orphan). */
+h1, h2, h3, h4 {
+  text-wrap: balance;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+
+img { max-width: 100%; display: block; }
+a { color: inherit; }
+button { font-family: inherit; }
+
+/* ─── Eyebrow ────────────────────────────────────────────────────────────── */
+.eyebrow {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  letter-spacing: 0.16em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  margin: 0;
+  display: block;
+}
+.eyebrow.on-cream { color: var(--color-ink-eyebrow); }
+
+/* ─── Containers ─────────────────────────────────────────────────────────── */
+.container {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+section { position: relative; }
+
+/* Density modifier — set on <body> via Tweaks */
+body[data-density="compact"]  { --section-pad: 80px; }
+body[data-density="spacious"] { --section-pad: 160px; }
+
+/* ─── Buttons ────────────────────────────────────────────────────────────── */
+.btn {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 14px 28px;
+  border: 1px solid;
+  border-radius: 2px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: var(--font-sans);
+  background: transparent;
+}
+.btn--primary-dark {  /* dark on light bg */
+  background: var(--color-forest);
+  color: var(--color-cream);
+  border-color: var(--color-forest);
+}
+.btn--primary-dark:hover {
+  background: transparent;
+  color: var(--color-forest);
+}
+.btn--secondary-dark {
+  color: var(--color-forest);
+  border-color: var(--color-forest);
+}
+.btn--secondary-dark:hover {
+  background: var(--color-forest);
+  color: var(--color-cream);
+}
+.btn--primary-light { /* cream on dark bg */
+  background: var(--color-cream);
+  color: var(--color-forest);
+  border-color: var(--color-cream);
+}
+.btn--primary-light:hover {
+  background: transparent;
+  color: var(--color-cream);
+}
+.btn--ghost-light {
+  color: var(--color-cream);
+  border-color: rgba(244,239,227,0.4);
+}
+.btn--ghost-light:hover {
+  background: var(--color-cream);
+  color: var(--color-forest);
+  border-color: var(--color-cream);
+}
+
+/* ─── Focus styles ───────────────────────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--color-brass);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* ─── Section helpers ────────────────────────────────────────────────────── */
+.section { padding: var(--section-pad) 0; }
+.section--cream      { background: var(--color-cream-deep); color: var(--color-forest); }
+.section--cream-pale { background: var(--color-cream);      color: var(--color-forest); }
+.section--forest     { background: var(--color-forest);     color: var(--color-cream); }
+.section--forest-deep{ background: var(--color-forest-deep); color: var(--color-cream); }
+
+.text-pretty  { text-wrap: pretty; }
+.text-balance { text-wrap: balance; }
+
+/* ─── Industries placeholder hatch ──────────────────────────────────────── */
+.industry-placeholder::before {
+  content: "";
+  position: absolute; inset: 0;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    transparent 0, transparent 12px,
+    rgba(31,51,41,0.05) 12px, rgba(31,51,41,0.05) 13px
+  );
+  pointer-events: none;
+}
+
+/* ─── Form ───────────────────────────────────────────────────────────────── */
+.input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(31,51,41,0.4);
+  padding: 10px 0;
+  font-size: 17px;
+  color: var(--color-forest);
+  outline: none;
+  transition: border-color 0.15s ease, border-width 0.15s ease;
+  font-family: var(--font-sans);
+}
+.input:focus { border-bottom: 2px solid var(--color-forest); }
+.input::placeholder { color: rgba(31,51,41,0.3); }
+.label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--color-forest);
+  margin-bottom: 6px;
+}
+
+/* ─── Edit-mode highlight (when Tweaks active) ──────────────────────────── */
+body[data-edit-mode="on"] [data-tw-target] {
+  outline: 1px dashed rgba(200,167,102,0.55);
+  outline-offset: 4px;
+  cursor: text;
+}
+
+/* ─── Mobile nav helper ─────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  :root { --section-pad: 80px; }
+  body[data-density="spacious"] { --section-pad: 110px; }
+}
