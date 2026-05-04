@@ -3,7 +3,7 @@ import { NextRequest, NextResponse } from 'next/server'
 // TODO: Update FROM_EMAIL to a verified Resend domain (e.g. website@longtrailpartners.com)
 import { Resend } from 'resend'
 
-const TO_EMAIL = 'hello@longtrailpartners.com'
+const TO_EMAIL = 'jb@longtrl.com'
 const FROM_EMAIL = 'website@longtrailpartners.com'
 
 export async function POST(req: NextRequest) {
