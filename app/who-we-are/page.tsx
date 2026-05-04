@@ -25,7 +25,7 @@ export default function WhoWeArePage() {
       img: '/images/stephen.jpg',
       paragraphs: [
         'Stephen is from just outside Boston. The Northeast is not something he had to discover; he has been here his whole life.',
-        'He has spent his career working with businesses at close range, not just reviewing numbers, but sitting with owners and managers, understanding how things actually operate, and figuring out what would make them better. He has overseen operations across [X properties / X locations], managed [$X million] of complex development projects, and done enough of the hands-on work to know what questions to ask and which answers actually matter.',
+        'He has spent his career working with businesses at close range, not just reviewing numbers, but sitting with owners and managers, understanding how things actually operate, and figuring out what would make them better. He has managed 20+ businesses and overseen $250 million+ of capital projects, and done enough of the hands-on work to know what questions to ask and which answers actually matter.',
       ],
     },
   ]
