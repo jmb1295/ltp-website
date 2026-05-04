@@ -4,11 +4,13 @@ import { useRef, useState } from 'react'
 
 export default function ContactForm() {
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
+  const [errorMsg, setErrorMsg] = useState('')
   const formRef = useRef<HTMLFormElement>(null)
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
     setStatus('loading')
+    setErrorMsg('')
     const form = e.currentTarget
     const data = Object.fromEntries(new FormData(form))
     try {
@@ -17,14 +19,17 @@ export default function ContactForm() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),
       })
+      const json = await res.json()
       if (res.ok) {
         setStatus('success')
         formRef.current?.reset()
       } else {
         setStatus('error')
+        setErrorMsg(json.error ?? 'Unknown error')
       }
-    } catch {
+    } catch (err) {
       setStatus('error')
+      setErrorMsg(String(err))
     }
   }
 
@@ -44,7 +49,7 @@ export default function ContactForm() {
     <>
       {status === 'error' && (
         <p role="alert" style={{ color: 'var(--color-forest)', fontSize: 15, marginBottom: 16 }}>
-          Something went wrong. Please try again or email us directly.
+          Something went wrong: {errorMsg || 'Please try again or email us directly.'}
         </p>
       )}
       <form ref={formRef} onSubmit={handleSubmit} noValidate style={{ width: '100%', fontFamily: 'var(--font-sans)' }}>
