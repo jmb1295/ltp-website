@@ -279,7 +279,7 @@ function HomeTeam() {
       name: 'Stephen Goodwin',
       role: 'Co-Founder',
       img: '/images/stephen.jpg',
-      bio: 'Stephen grew up outside Boston and has known the Northeast his whole life. He has spent his career working alongside business owners and management teams, not from a boardroom but in the weeds of how things actually work. He has overseen operations across [X properties / X locations] and managed [$X million] of capital projects, and learned what he knows by staying close to the businesses themselves. Stephen and Justin have known each other since 2013. The partnership behind Long Trail Partners predates the firm by more than a decade.',
+      bio: 'Stephen grew up outside Boston and has known the Northeast his whole life. He has spent his career working alongside business owners and management teams, not from a boardroom but in the weeds of how things actually work. He has overseen operations across 20 locations and managed $250 million of capital projects, and learned what he knows by staying close to the businesses themselves. Stephen and Justin have known each other since 2013. The partnership behind Long Trail Partners predates the firm by more than a decade.',
     },
   ]
 

@@ -52,7 +52,7 @@ export default function OurFocusPage() {
       <PageHero
         eyebrow="Our Focus"
         heading="What we are looking for."
-        lede="We work with owners of essential service businesses who are thinking about what comes next, whether that means a full sale, a partial exit, or a partner for the next chapter."
+        lede="We work with founders of great businesses in the Northeast who are thinking about what comes next, whether that means a full sale, a partial exit, or a partner for the next chapter."
         imageSrc="/images/our-focus-hero.jpg"
         imageAlt="Northeast autumn foliage with lake reflection"
         imagePosition="center 60%"
