@@ -96,7 +96,7 @@ export default function WhoWeArePage() {
               ))}
             </div>
             <div style={{ fontSize: 18, lineHeight: 1.7, color: 'var(--color-ink-body)' }}>
-              <p style={{ marginTop: 0 }}>We met in Ithaca in 2013, two students at the hotel school who were already more interested in running businesses than studying them. Our first jobs were at the same company. The careers diverged after that. The friendship did not.</p>
+              <p style={{ marginTop: 0 }}>We met in college in Ithaca in 2013, both of us already more interested in running businesses than studying them. Our first jobs were at the same company. The careers diverged after that. The friendship did not.</p>
               <p>Justin officiated Stephen&apos;s wedding last year. We spend summers on Cape Cod and winters in Vermont. After thirteen years, the friendship has been the constant.</p>
               <p>The firm itself started the way most things between us do. Justin sent Stephen a business he thought was worth a look. Stephen dove in without hesitation. That conversation turned into the next, and the next, and eventually into Long Trail Partners.</p>
               <p style={{ marginBottom: 0 }}>When you sell a business to a partnership that has held together for thirteen years, you can be reasonably sure the partnership will still be holding together when the work is finished. Most buyers cannot say that. We can.</p>
