@@ -272,7 +272,7 @@ function HomeTeam() {
       name: 'Justin Bredahl',
       role: 'Co-Founder',
       img: '/images/justin.jpg',
-      bio: 'Justin grew up in Southern California and came east for college, where he stayed. His family now spends much of the year at their place near Mt. Snow, Vermont. His whole career has been in operations: managing teams, running businesses, and doing the kind of work where you are the one people call when something breaks. Most recently he ran operations across a national platform, with more than forty general managers reporting up to him. Justin and Stephen have been close friends since they met in Ithaca in 2013.',
+      bio: 'Justin grew up in Southern California and came east for college, where he stayed. His family now spends much of the year at their place near Mt. Snow, Vermont. His whole career has been in operations: managing teams, running businesses, and doing the kind of work where you are the one people call when something breaks. Most recently he ran operations across a national platform, with more than forty general managers reporting up to him. Justin and Stephen have been close friends since they met in college in 2013.',
     },
     {
       key: 'stephen',
