@@ -59,7 +59,7 @@ export default function WhoWeArePage() {
           </h2>
           <div style={{ textAlign: 'left', maxWidth: 760, margin: '0 auto' }}>
             <p style={{ fontSize: 19, lineHeight: 1.7, color: 'var(--color-ink-body)', marginBottom: 20 }}>
-              Neither of us came to this from finance. We came to it from inside businesses, the kind of work where you are managing people, handling problems as they come up, and learning what you are doing by actually doing it. Between the two of us, we have managed hundreds of employees and overseen tens of millions of dollars of capital projects. Together, we have direct experience owning and operating hospitality assets in Northern New England.
+              Neither of us came to this from finance. We came to it from inside businesses, the kind of work where you are managing people, handling problems as they come up, and learning what you are doing by actually doing it. Between the two of us, we have managed hundreds of employees and overseen tens of millions of dollars of capital projects. Together, we have direct experience owning and operating businesses in Northern New England.
             </p>
             <p style={{ fontSize: 19, lineHeight: 1.7, color: 'var(--color-ink-body)', margin: 0 }}>
               We also have real ties to this part of the country. Justin&apos;s family spends much of the year in Vermont. Stephen grew up outside Boston. The Northeast is not a market we picked off a list, it is where we live, and the businesses up here are why we started this firm.
