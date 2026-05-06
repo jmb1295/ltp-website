@@ -23,7 +23,7 @@ const phases = [
 const callouts = [
   { title: 'You will work with us directly.', body: 'Decisions are made by Justin and Stephen, not by an investment committee in another city. From the first phone call forward, you will have our cell numbers and a real answer when you ask a question.' },
   { title: 'Our capital does not have an expiration date.', body: 'We are not a fund with a clock. We bought our first businesses with the intention of keeping them, and that has not changed. There is no predetermined exit pressuring the deal terms or the operating decisions that come after.' },
-  { title: 'Your team is the asset, and we treat it that way.', body: 'The teams that came with the businesses we already own are the teams running them today. That is what we mean when we say we keep what works. It is not a slogan; it is the only way the math actually adds up over a long horizon.' },
+  { title: 'Your team is the asset, and we treat it that way.', body: 'The teams that came with the businesses we already own are the teams running them today. That is what we mean when we say we keep what works. It is not a slogan. It is the only way the math actually adds up over a long horizon.' },
   { title: 'The transition is designed to be quiet.', body: 'No reorganizations on day one, no public press cycles, no surprises sprung on the team after the close. The whole process is built to be calm. If yours cannot be, we are probably not the right partner.' },
 ]
 
@@ -64,7 +64,7 @@ export default function ForOwnersPage() {
               Every founder we talk to has a different idea of what the next chapter looks like. Some want a full exit and a clean handoff. Some want to stay involved for a year, or five, or longer. Some want to keep a stake in the business they built and watch it grow with us. None of those answers is wrong, and we will structure the deal around the answer that fits your life, not around a structure that is convenient for a fund.
             </p>
             <p style={{ fontSize: 19, lineHeight: 1.7, color: 'var(--color-ink-body)', marginBottom: 20 }}>
-              Our preferred path is partnership. That can mean different things in different deals, but the through line is the same: we want you to feel, on the day after we close, that the business is in better hands than it would have been with anyone else who was talking to you. That is the bar we hold ourselves to, and it is the only bar that matters.
+              Our preferred path is partnership. That can mean different things in different deals, but the goal is the same: we want you to feel, on the day after we close, that the business is in good hands. That is the bar we hold ourselves to.
             </p>
             <p style={{ fontSize: 19, lineHeight: 1.7, color: 'var(--color-ink-body)', margin: 0 }}>
               No earnouts that quietly cap your payout. No multi-year stay-on requirements with strings attached. No reorganization on day one. The team you built stays. The customers you earned stay. The character of the place you spent decades shaping stays. The few things that need to change, we change with you, in order, with everyone weighing in.

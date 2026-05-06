@@ -31,7 +31,7 @@ export default function WhoWeArePage() {
       role: 'Co-Founder',
       img: '/images/stephen.jpg',
       paragraphs: [
-        'Stephen is from just outside Boston. The Northeast is not something he had to discover; he has been here his whole life.',
+        'Stephen grew up just outside Boston and has spent his whole life in the Northeast.',
         'He has spent his career working with businesses at close range, not just reviewing numbers, but sitting with owners and managers, understanding how things actually operate, and figuring out what would make them better. He has managed 20+ businesses and overseen $250 million+ of capital projects, and done enough of the hands-on work to know what questions to ask and which answers actually matter.',
       ],
     },
@@ -59,7 +59,7 @@ export default function WhoWeArePage() {
           </h2>
           <div style={{ textAlign: 'left', maxWidth: 760, margin: '0 auto' }}>
             <p style={{ fontSize: 19, lineHeight: 1.7, color: 'var(--color-ink-body)', marginBottom: 20 }}>
-              Neither of us came to this from finance. We came to it from inside businesses, the kind of work where you are managing people, handling problems as they come up, and learning what you are doing by actually doing it. Between the two of us, we have managed hundreds of employees and overseen tens of millions of dollars of capital projects.
+              Neither of us came to this from finance. We came to it from inside businesses, the kind of work where you are managing people, handling problems as they come up, and learning what you are doing by actually doing it. Between the two of us, we have managed hundreds of employees and overseen tens of millions of dollars of capital projects. Together, we have direct experience owning and operating hospitality assets in Northern New England.
             </p>
             <p style={{ fontSize: 19, lineHeight: 1.7, color: 'var(--color-ink-body)', margin: 0 }}>
               We also have real ties to this part of the country. Justin&apos;s family spends much of the year in Vermont. Stephen grew up outside Boston. The Northeast is not a market we picked off a list, it is where we live, and the businesses up here are why we started this firm.
@@ -78,7 +78,7 @@ export default function WhoWeArePage() {
           <div className="ltp-together-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1.1fr', gap: 70, alignItems: 'center', maxWidth: 1100, margin: '0 auto' }}>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
               {[
-                { img: '/images/cornell-graduation.jpg', caption: 'Cornell, 2017. College graduation, just before our first jobs out of school.', span: false, objectPosition: 'center' },
+                { img: '/images/cornell-graduation.jpg', caption: 'Ithaca, 2017. College graduation, just before our first jobs out of school.', span: false, objectPosition: 'center' },
                 { img: '/images/officiating-wedding.jpg', caption: "Stephen's wedding, 2025. Justin officiating.", span: false, objectPosition: 'center 25%' },
                 { img: '/images/cape-weekend.jpg', caption: 'Cape Cod, 2020. Thirteen years of friendship before there was a firm.', span: true, objectPosition: 'center' },
               ].map((p, i) => (
