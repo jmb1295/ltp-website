@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     url: BASE_URL,
     images: [
       {
-        url: '/images/og-default.jpg',
+        url: '/images/who-we-are-hero.jpg',
         width: 1200,
         height: 630,
         alt: 'Long Trail Partners',
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: SITE_NAME,
     description: DEFAULT_DESCRIPTION,
-    images: ['/images/og-default.jpg'],
+    images: ['/images/who-we-are-hero.jpg'],
   },
   alternates: {
     canonical: BASE_URL,
@@ -73,7 +73,7 @@ export default function RootLayout({
     '@type': 'Organization',
     name: SITE_NAME,
     url: BASE_URL,
-    logo: `${BASE_URL}/images/og-default.jpg`,
+    logo: `${BASE_URL}/images/who-we-are-hero.jpg`,
     description: DEFAULT_DESCRIPTION,
     foundingDate: '2022',
     areaServed: {
