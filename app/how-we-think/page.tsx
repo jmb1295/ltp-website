@@ -2,7 +2,14 @@ import Link from 'next/link'
 import PageHero from '@/components/PageHero'
 
 export const metadata = {
-  title: 'How We Think | Long Trail Partners',
+  title: 'How We Think',
+  description: 'The ideas that shape how Long Trail Partners buys businesses, runs them, and plans to stick around: time horizon, people, restraint, geography, and the value of quiet.',
+  openGraph: {
+    title: 'How We Think | Long Trail Partners',
+    description: 'The ideas that shape how Long Trail Partners buys businesses, runs them, and plans to stick around: time horizon, people, restraint, geography, and the value of quiet.',
+    url: 'https://long-trail-partners.com/how-we-think',
+  },
+  alternates: { canonical: 'https://long-trail-partners.com/how-we-think' },
 }
 
 const beliefs = [

@@ -3,7 +3,14 @@ import Link from 'next/link'
 import PageHero from '@/components/PageHero'
 
 export const metadata = {
-  title: 'Who We Are | Long Trail Partners',
+  title: 'Who We Are',
+  description: 'Justin Bredahl and Stephen Goodwin are operators who built Long Trail Partners to acquire and run great Northeast businesses. Thirteen years of partnership before there was a firm.',
+  openGraph: {
+    title: 'Who We Are | Long Trail Partners',
+    description: 'Justin Bredahl and Stephen Goodwin are operators who built Long Trail Partners to acquire and run great Northeast businesses. Thirteen years of partnership before there was a firm.',
+    url: 'https://long-trail-partners.com/who-we-are',
+  },
+  alternates: { canonical: 'https://long-trail-partners.com/who-we-are' },
 }
 
 export default function WhoWeArePage() {

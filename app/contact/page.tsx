@@ -2,7 +2,14 @@ import PageHero from '@/components/PageHero'
 import ContactForm from '@/components/ContactForm'
 
 export const metadata = {
-  title: 'Contact | Long Trail Partners',
+  title: 'Contact',
+  description: 'Get in touch with Long Trail Partners. Whether you\'re a business owner thinking about a transition or just curious about what we\'re building, we\'re always happy to talk.',
+  openGraph: {
+    title: 'Contact | Long Trail Partners',
+    description: 'Get in touch with Long Trail Partners. Whether you\'re a business owner thinking about a transition or just curious about what we\'re building, we\'re always happy to talk.',
+    url: 'https://long-trail-partners.com/contact',
+  },
+  alternates: { canonical: 'https://long-trail-partners.com/contact' },
 }
 
 const people = [

@@ -3,7 +3,14 @@ import Link from 'next/link'
 import PageHero from '@/components/PageHero'
 
 export const metadata = {
-  title: 'Our Focus | Long Trail Partners',
+  title: 'Our Focus',
+  description: 'Long Trail Partners buys founder-owned service businesses in Vermont, New Hampshire, Maine, Rhode Island, Upstate New York, and Western Massachusetts with $1–5M EBITDA.',
+  openGraph: {
+    title: 'Our Focus | Long Trail Partners',
+    description: 'Long Trail Partners buys founder-owned service businesses in Vermont, New Hampshire, Maine, Rhode Island, Upstate New York, and Western Massachusetts with $1–5M EBITDA.',
+    url: 'https://long-trail-partners.com/our-focus',
+  },
+  alternates: { canonical: 'https://long-trail-partners.com/our-focus' },
 }
 
 const criteria = [

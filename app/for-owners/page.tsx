@@ -2,7 +2,14 @@ import Link from 'next/link'
 import PageHero from '@/components/PageHero'
 
 export const metadata = {
-  title: 'For Owners | Long Trail Partners',
+  title: 'For Owners',
+  description: 'Selling your business? Long Trail Partners buys founder-owned companies in the Northeast with permanent capital, no fund clock, and a commitment to keeping your team intact.',
+  openGraph: {
+    title: 'For Owners | Long Trail Partners',
+    description: 'Selling your business? Long Trail Partners buys founder-owned companies in the Northeast with permanent capital, no fund clock, and a commitment to keeping your team intact.',
+    url: 'https://long-trail-partners.com/for-owners',
+  },
+  alternates: { canonical: 'https://long-trail-partners.com/for-owners' },
 }
 
 const phases = [
@@ -133,7 +140,8 @@ export default function ForOwnersPage() {
       {/* FAQ */}
       <section className="section section--cream-pale">
         <div className="container" style={{ maxWidth: 1040 }}>
-          <div style={{ textAlign: 'center', marginBottom: 60 }}>
+          <div style={{ textAlign: 'center', marginBottom: 60 }}
+          >
             <p className="eyebrow on-cream" style={{ marginBottom: 18 }}>FAQ</p>
             <h2 style={{ fontWeight: 600, fontSize: 'clamp(34px, 4.2vw, 48px)', color: 'var(--color-forest)' }}>Things owners ask us.</h2>
           </div>
