@@ -97,7 +97,7 @@ export default function OurFocusPage() {
         <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
           <Image
             src="/images/characteristics-hero.jpg"
-            alt=""
+            alt="Northeast landscape background"
             fill
             aria-hidden
             style={{ objectFit: 'cover', objectPosition: 'center 40%', filter: 'saturate(1.15) contrast(1.05)' }}
